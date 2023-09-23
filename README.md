@@ -35,7 +35,6 @@ The repository is organized to provide a structured and accessible learning expe
 - **`/code`**: Includes code examples and projects related to the course material.
 - **`/resources`**: This directory hosts supplementary learning resources, such as PDFs, articles, and recommended books.
 - **`/assignments`**: If applicable, this is where you'll find assignments or practical exercises to reinforce your understanding.
-- **`/exams`**: If there are any exam materials or practice tests, they'll be stored here.
 
 ## Resources
 
