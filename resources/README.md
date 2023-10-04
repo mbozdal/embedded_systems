@@ -4,3 +4,4 @@
 ## Links
 [Arm Education: Introduction to Microprocessors (edx)](https://www.edx.org/learn/computer-architecture/arm-education-introduction-to-microprocessors)
 
+[Keil uVision Project Setup & Practical Example](https://www.youtube.com/watch?v=U5lVnrtbkXo)
