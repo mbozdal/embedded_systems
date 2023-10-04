@@ -4,4 +4,7 @@
 ## Links
 [Arm Education: Introduction to Microprocessors (edx)](https://www.edx.org/learn/computer-architecture/arm-education-introduction-to-microprocessors)
 
+[Keil uVision Install & Setup for STM32](https://www.youtube.com/watch?v=TO85lArN1B8&list=PLtVUYRe-Z-mfKO0lg_-MBvwWl6VjWT8Dt)
+
 [Keil uVision Project Setup & Practical Example](https://www.youtube.com/watch?v=U5lVnrtbkXo)
+
