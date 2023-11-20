@@ -1,15 +1,40 @@
-#include "stm32f10x.h"
+/**
+ * @file main.c
+ * @brief STM32 Clock Configuration Example
+ * @details The provided code demonstrates how to configure the clock system on an STM32 microcontroller dynamically.
+ * Ideally, these configurations are commonly done in a system initialization file named system_stm32xxxx.c 
+ * (where "xxxx" represents the specific STM32 series, e.g., f10x, f4xx, etc.). For demonstration purposes, 
+ * the clock configuration is included in the main.c file.
+ *
+ * @note It includes functions to initialize the clock using the High-Speed Internal (HSI), High-Speed External (HSE), 
+ * and Phase-Locked Loop (PLL) clock sources. Additionally, it's recommended to handle interrupts for better efficiency, 
+ * as busy delays in the program may affect the responsiveness of the microcontroller.
+ */
+ 
+ #include "stm32f10x.h"
 
-// Define constants
-#define DELAY_TIME 499999
-#define DEBOUNCE_DELAY 100
+/**
+ * @brief Define constants
+ */
+ 
+ 
+#define DELAY_TIME 499999   /**< Delay time for toggle */
+#define DEBOUNCE_DELAY 100  /**< Delay for switch debouncing */
 
-// Function prototypes
+
+/**
+ * @brief Function prototypes
+ */
 void initClockPLL(void);
 void initClockHSI(void);
 void initClockHSE(void);
 void delay(volatile uint32_t time);
 
+/**
+ * @brief Main function
+ * @details Initializes the clock and switches the clock source dynamically based on user input.
+ * @return 0 on successful execution
+ */
 int main() {
     // Initialize the clock to use HSI as the system clock
     initClockHSI();
@@ -48,7 +73,10 @@ int main() {
     return 0;
 }
 
-// Function to introduce a delay
+/**
+ * @brief Function to introduce a delay
+ * @param time Number of iterations for the delay
+ */
 void delay(volatile uint32_t time) {
     while (time--);
 }
